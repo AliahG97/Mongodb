@@ -1,8 +1,10 @@
 // Accepting the timestamp foremat
-module.export = (timestamp) => {
-
+module.exports = (timestamp) => {
+console.log('hello')
+console.log("This is timestamp = ", timestamp)
 const dateObj = new Date(timestamp);
-const month = dateObj.getMonth();
+// const month = dateObj.getMonth();
+const month = dateObj.toLocaleString('default', { month: 'long' }); 
 const dayOfMonth = dateObj.getDate();
 
 const year = dateObj.getFullYear();
@@ -15,13 +17,13 @@ const hour =
 if (hour === 0) {
     hour = 12;
 
-
+}
 const minutes = (dateObj.getMinutes() < 10 ? '0' : '') + dateObj.getMinutes();
 
 // set `am` or `pm`
 const amPm = dateObj.getHours() >= 12 ? 'pm' : 'am';
 
-const formattedTimeStamp = ` ${month}, ${dayOfMonth}, ${year} at ${hour}:${minutes} ${amPm}`;
-
+const formattedTimeStamp = ` ${month}- ${dayOfMonth}- ${year} at ${hour}:${minutes} ${amPm}`;
+console.log(formattedTimeStamp)
 return formattedTimeStamp;
-}};
+};
