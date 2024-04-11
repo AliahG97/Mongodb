@@ -76,7 +76,7 @@ const userController = {
         
       })
       .then(() => {
-        res.json({ message: "User and all thoughts deleted!" });
+        res.json({ message: "User deleted!" });
       })
       .catch((err) => res.json(err));
   },
