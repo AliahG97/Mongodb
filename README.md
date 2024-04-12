@@ -28,7 +28,7 @@ Welcome to TweetMongo - A simplified version of the twitter social network that 
 ## Screenshot
 ![ReadMe Gen Screenshot](./Assets/Images/no-sql-screenshot.gif)
 Repo: https://github.com/AliahG97/Tweet-Mongo
-Watch video: https://youtu.be/kmt4D99yVEc
+Watch video: https://youtu.be/NuXa_vXvpDo 
 
 ## Usage
 Users can create a username that gets a unique ID. The user is able to update the username or email at anytime, and delete the account. The user can then create a thought which can be tracked according to the users ID. The user can update and or dele their thought at anytime. the user can also add and delete friends to their user Id list. The user can comment/ react to thoughts, but they cannot be edited only deleted.
