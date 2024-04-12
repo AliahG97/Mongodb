@@ -31,7 +31,7 @@ Repo: https://github.com/AliahG97/Tweet-Mongo
 Watch video: https://youtu.be/kmt4D99yVEc
 
 ## Usage
-Users can create a username that gets a unique ID. The user is able to update the username or email at anytime, and delete the account and thoughts. The user can then create a thought which can be tracked according to the users ID. The user can update and or dele their thought at anytime. the user can also add and delete friends to their user Id list. The user can comment/ react to thoughts, but they cannot be edited only deleted.
+Users can create a username that gets a unique ID. The user is able to update the username or email at anytime, and delete the account. The user can then create a thought which can be tracked according to the users ID. The user can update and or dele their thought at anytime. the user can also add and delete friends to their user Id list. The user can comment/ react to thoughts, but they cannot be edited only deleted.
 
 ## Features
 1. Users:
@@ -39,7 +39,7 @@ Users can create a username that gets a unique ID. The user is able to update th
 - GET: All Users
 - GET: User by Id
 - PUT: Update User
-- DELETE: Delete a User and associated thoughts
+- DELETE: Delete a User
 
 2. Friends:
 - POST: Add a Friend
@@ -58,6 +58,7 @@ Users can create a username that gets a unique ID. The user is able to update th
 
 
 ## Contribution
+- add feature to user  and thweir associated thoughts
 - Add a thought search based on matching thought text keywords.
 
 ## Credits

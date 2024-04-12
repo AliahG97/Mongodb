@@ -4,7 +4,7 @@ console.log('thoughts')
 const ReactionSchema = new Schema(
   {
     reactionId: {
-      // Mongoose's ObjectId data type
+      // Mongoose ObjectId data type
       type: Schema.Types.ObjectId,
       // Default value is set to a new ObjectId
       default: () => new Types.ObjectId(),
@@ -23,7 +23,7 @@ const ReactionSchema = new Schema(
 
     createdAt: {
       type: Date,
-      // Set default value to the current timestamp
+      // Set default to current time
       default: Date.now,
       get: (timeNow) => dateFormat(timeNow)
       
@@ -58,7 +58,7 @@ const ThoughtSchema = new Schema(
       required: true,
     },
 
-    // array of nested documents created with the reactionSchema
+    // array of reaction
     reactions: [ReactionSchema],
   },
   {
